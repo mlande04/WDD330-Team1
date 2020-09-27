@@ -112,8 +112,28 @@
         // 4. How many years did all the inventors live?
 
         console.log('In the following we show how mani years all the inventors lived!');
-        let lived = (acc, cur) => cur.passed - acc.year ;
-        console.log(inventors.reduce(lived));
+
+        //Creating a counter
+        var counter = 0;
+        //Using the reduce function to sum up all the years of birth
+        let sumYears = inventors.reduce(
+            //This function gives the rule to the refucer taht taked the accumulator and sum it to the current value and returns it
+            function year(accumulator, currentValue) {
+                return accumulator + currentValue.year;
+            },
+            //here we sum the reducer returner value to the counter
+            counter);
+
+        let sumPassed = inventors.reduce(
+            //This function gives the rule to the refucer taht taked the accumulator and sum it to the current value and returns it
+            function year(accumulator, currentValue) {
+                return accumulator + currentValue.passed;
+            },
+            //here we sum the reducer returner value to the counter
+            counter);
+
+        //we make the difference of the two variables in order to get the years lived.
+        console.log(sumPassed - sumYears);
 
         // 5. Sort the inventors by years lived
 
