@@ -84,6 +84,24 @@
         // Array.prototype.filter()
         // 1. Filter the list of inventors for those who were born in the 1500's
 
+        console.log("In the following we filter the array for those who were born in the 1500's using the Filter() property");
+
+        //Create a variable to filter with the condition to be between 1500 and 1600
+        const bornIn1500S = inventors.filter(inventors => inventors.year >= 1500 && inventors.year < 1600);
+        //Display the array
+        console.log(bornIn1500S);
+
+        //if you don't want to use the filter() propriety here you have a function that does the same work
+
+        console.log('Now I did the same filter but using a function!');
+        //Runnung each elemnt of the array
+        inventors.forEach(inventors => {
+            //if in the range then print it
+            if (inventors.year >= 1500 && inventors.year < 1600) {
+                console.log(inventors)
+            };
+        });
+
         // Array.prototype.map()
         // 2. Give us an array of the inventors' first and last names
 
@@ -92,6 +110,10 @@
 
         // Array.prototype.reduce()
         // 4. How many years did all the inventors live?
+
+        console.log('In the following we show how mani years all the inventors lived!');
+        let lived = (acc, cur) => cur.passed - acc.year ;
+        console.log(inventors.reduce(lived));
 
         // 5. Sort the inventors by years lived
 
