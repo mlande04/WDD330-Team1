@@ -1,24 +1,24 @@
 const ind = [{
-    title: "Week 1 Point 1",
+    title: "Week 2 Point 1",
     link: "team-02-1.html",
     intro: "intro:",
     text: "Create a function that will take input from a text entry and display it to the div."
 },
 {
-    title: "Week 1 Point 2",
+    title: "Week 2 Point 2",
     link: "team-02-2.html",
     intro: "intro:",
     text: "Create a function that will take the inputed number and sum up to the number inputed."
 },
 {
-    title: "Week 1 Point 3",
+    title: "Week 2 Point 3",
     link: "team-02-3.html",
     intro: "intro:",
     text: "Create a 2 number entry and let the user choose a matematical operation."
     },
     {
-        title: "Week 2",
-        link: "team-02-3.html",
+        title: "Week 3",
+        link: "week3.html",
         intro: "intro:",
         text: "Press F12 and read in the comments, you will find what it was required and in the consolle it will be displaied the results."
     }
